@@ -6,7 +6,7 @@ class PriceCard(models.Model):
     pc_desc = models.CharField(max_length=50, verbose_name="Description")
 
     def __str__(self):
-        return self.pc_desc
+        return self.pc_value
     
     class Meta:
         verbose_name = 'Price Card'
