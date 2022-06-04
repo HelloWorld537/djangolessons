@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'price.apps.PriceConfig',
+    'cms.apps.CmsConfig',
     'crm.apps.CrmConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -121,10 +123,10 @@ USE_TZ = True
 STATICFILES_DIRS = [
     BASE_DIR / "startLearnDjango/static/",
 ]
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-MEDIA_URL = 'media/'
+MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
